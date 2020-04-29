@@ -9,6 +9,9 @@ class UserAdmin(admin.ModelAdmin):
 class PlacesAdmin(admin.ModelAdmin):
     list_display = ('name', 'location')
 
+class StoriesAdmin(admin.ModelAdmin):
+    list_display = ('type', 'title')
+
 admin.site.register(User, UserAdmin)
 admin.site.register(Places, PlacesAdmin)
 admin.site.register(Stories)

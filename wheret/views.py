@@ -17,12 +17,6 @@ def hplaces(request):
 def aboutus(request):
     return render(request, 'aboutus.html')
 
-def countriesB(request):
-    return render(request, 'countriesB.html')
-
-def countriesH(request):
-    return render(request, 'countriesH.html')
-
 def stories(request):
     return render(request, 'stories.html')
 

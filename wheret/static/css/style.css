@@ -6,9 +6,26 @@ padding: 0px;
 box-sizing: border-box;
 }
 
-
 body {
-background: #C169FF;
+background: #8cecec;
+}
+
+#text {
+font-family: Arial;
+font-size: 40px;
+position: absolute;
+top:40%;
+left:2%;
+color: #000;
+text-align: justify;
+}
+
+#logo {
+width:150px;
+height:150px;
+position: absolute;
+left: 45%;
+top:20%;
 }
 
 .menu {
@@ -94,10 +111,52 @@ input:checked ~ ul {
 opacity: 1;
 transition: .25s 0.5s ease-in-out;
 }
+
+input:checked ~ #text {
+opacity: 0;
+font-size:0.1px;
+transition: .25s 0.5s ease-in-out;
+}
 a {
 display:block;
 margin-bottom:40px;
-color: #C169FF;
+color: #8cecec;
 font-size:47px;
 text-decoration: none;
+}
+
+.countdown{
+width:200px;
+height:70px;
+background-color: #ffffff;
+position: absolute;
+top:80%;
+left:45%;
+}
+
+.number
+{
+min-width: 20px;
+max-width: 55px;
+background-color: #efefef;
+color: #000000;
+font-size: 22px;
+margin: 5px;
+text-align: center;
+border-radius: 5px;
+padding: 5px;
+}
+
+.legend{
+height: 25px;
+line-height: 10px;
+font-size:12px;
+background-color: #ffffff;
+text-align: center;
+}
+
+input:checked ~ .countdown {
+opacity: 0;
+top:1%;
+left:1%;
 }
