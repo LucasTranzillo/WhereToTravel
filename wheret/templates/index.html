@@ -7,31 +7,46 @@
     <link rel="stylesheet" href="{% static 'css/style.css'%}"></link>
 </head>
 <body>
-<img id="logo" src="{% static 'img/logo.jpg'%}">
-<input id="menu-button" type="checkbox">
-<label for="menu-button">
-  <div class="menu">
- <span class="button"></span>
-  </div>
-</label>
-<ul>
-    <li><a href="index">Home</a></li>
-    <li><a href="bplaces">Beatiful Places</a></li>
-    <li><a href="hplaces">Hauting Places</a></li>
-    <li><a href="contact">Contact</a></li>
-    <li><a href="stories">Stories</a></li>
-    <li><a href="aboutus">Who we Are</a></li>
-</ul>
-   <p id="text">We are a website in development who wants to give the people
+<div class="container">
+    <img id="logo" src="{% static 'img/logo.jpg'%}">
+    <input id="menu-button" type="checkbox">
+    <label for="menu-button">
+        <div class="menu">
+        <span class="button"></span>
+        </div>
+    </label>
+    <ul>
+        <li><a href="index">Home</a></li>
+        <li><a href="bplaces">Beatiful Places</a></li>
+        <li><a href="hplaces">Hauting Places</a></li>
+        <li><a href="contact">Contact</a></li>
+        <li><a href="stories">Stories</a></li>
+        <li><a href="aboutus">Who we Are</a></li>
+    </ul>
+    <p id="text">We are a website in development who wants to give the people
        a chance to share your traveling stories with the world.
        The is a DEMO WebSite, make sure to follow us on socials media ti any news about us.
-       Click on the Three lines bellow to open the menu. We will release this Website in:</p>
-
+       Click on the Three lines bellow to open the menu. We will release this Website in:
+    </p>
+</div>
 
 <div class="countdown">
-<table><tr><td><div class="number" id="day"></div></td></td><td><div class="number" id="hour"></div></td><td><div class="number" id="minute"></div></td><td><div class="number" id="second"></div></td></tr>
-<tr style="height:20px"><td><p class="legend">Days</p></td><td><p class="legend">Hours</p></td><td><p class="legend">Min</p></td><td><p class="legend">Sec</p></td></tr></table>
+    <table>
+        <tr>
+            <td class="count_td"><div class="number" id="day"></div></td></td>
+            <td class="count_td"><div class="number" id="hour"></div></td>
+            <td class="count_td"><div class="number" id="minute"></div></td>
+            <td class="count_td" id="td_sec"><div class="number" id="second"></div></td>
+        </tr>
+        <tr>
+            <td class="count_td"><p class="legend">Days</p></td>
+            <td class="count_td"><p class="legend">Hours</p></td>
+            <td class="count_td"><p class="legend">Min</p></td>
+            <td class="count_td" id="td_sec"><p class="legend">Sec</p></td>
+        </tr>
+    </table>
 
     <script src="{% static 'js/script.js'%}"></script>
+</div>
 </body>
 </html>

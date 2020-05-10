@@ -7,25 +7,35 @@ box-sizing: border-box;
 }
 
 body {
-background: #8cecec;
+background: #0393c5;
+margin: 0px;
+}
+
+.container {
+width: 90%;
+height: 100%;
+display: flex;
+justify-content: center;
+position: absolute;
+top: 150px;
 }
 
 #text {
-font-family: Arial;
+font-family: Times New Roman;
 font-size: 40px;
-position: absolute;
-top:40%;
-left:2%;
 color: #000;
 text-align: justify;
+position: relative;
+top: 150px;
 }
 
 #logo {
 width:150px;
 height:150px;
-position: absolute;
-left: 45%;
-top:20%;
+top: 0px;
+left: 50%;
+display: flex;
+position: relative;
 }
 
 .menu {
@@ -80,7 +90,7 @@ display: none;
 }
 
 input:checked ~ label .menu {
-box-shadow: 0 0 0 130vw #fff, 0 0 0 100vh #fff;
+box-shadow: 0 0 0 130vw #fff, 0 0 0 100vh #013a4e;
 }
 
 input:checked ~ label .button {
@@ -100,11 +110,15 @@ transform: rotate(90deg);
 
 ul {
 position:absolute;
-top: 50%;
-left:50%;
+top:220px;
+left: 60%;
+width: 500px;
+height: 550px;
 transform: translate(-50%,-50%);
 list-style: none;
 opacity: 0;
+padding-top: 0px;
+margin: 0px;
 }
 
 input:checked ~ ul {
@@ -120,38 +134,51 @@ transition: .25s 0.5s ease-in-out;
 a {
 display:block;
 margin-bottom:40px;
-color: #8cecec;
+color: #013a4e;
 font-size:47px;
 text-decoration: none;
 }
 
 .countdown{
 width:200px;
-height:70px;
-background-color: #ffffff;
-position: absolute;
-top:80%;
-left:45%;
+height:90px;
+background-color: #013a4e;
+position: fixed;
+left:44%;
+bottom: 0;
+padding-top: 0px;
+margin: 0px;
+}
+
+.count_td {
+border-right: solid 1px;
+border-color: #fff;
+border-top: 0px;
+margin: 0px;
+height: 25px;
 }
 
 .number
 {
 min-width: 20px;
 max-width: 55px;
-background-color: #efefef;
-color: #000000;
+color: #fff;
 font-size: 22px;
 margin: 5px;
 text-align: center;
-border-radius: 5px;
+text-align: center;
 padding: 5px;
 }
 
+#td_sec{
+border-right: 0px;
+}
+
 .legend{
-height: 25px;
-line-height: 10px;
-font-size:12px;
-background-color: #ffffff;
+height: 5px;
+line-height: 0px;
+font-size:15px;
+color: #fff;
 text-align: center;
 }
 
