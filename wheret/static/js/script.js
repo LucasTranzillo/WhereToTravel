@@ -22,3 +22,13 @@ document.getElementById('minute').innerHTML = minutes;
 document.getElementById('second').innerHTML = seconds;
 
 }, 1000);
+
+function Send() {
+
+    var nome = document.getElementById("nameid");
+
+    if (nome.value != "") {
+        alert('Thank you sr(a) ' + name.value + ' your message has send!');
+    }
+
+}

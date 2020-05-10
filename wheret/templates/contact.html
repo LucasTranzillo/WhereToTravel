@@ -24,5 +24,31 @@
     <li><a href="aboutus">Who we Are</a></li>
 </ul>
 </div>
+
+
+<form name="my_form" method="post">
+ <h1>Contact</h1>
+
+        <p class="name">
+            <input type="text" id="nameid" placeholder="YOUR NAME" required="required" name="Name" />
+            <label for="nameid">Name</label>
+        </p>
+        <p class="phone">
+            <input type="text" id="phoneid" placeholder="(xx)xxxxx-xxxx" name="phone" />
+            <label for="phoneid">Phone</label>
+
+        </p>
+        <p>
+            <input type="email" id="emailid" placeholder="email@mail.com" name="email" />
+            <label for="emailid">Email</label>
+        </p>
+        <p>
+            <textarea placeholder="Your message"></textarea>
+        </p>
+        <p class="submit">
+            <input type="submit" onclick="Send();" value="Send" />
+        </p>
+
+    </form>
 </body>
 </html>
