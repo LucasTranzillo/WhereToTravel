@@ -14,6 +14,6 @@ class StoriesAdmin(admin.ModelAdmin):
 
 admin.site.register(User, UserAdmin)
 admin.site.register(Places, PlacesAdmin)
-admin.site.register(Stories)
+admin.site.register(Stories, StoriesAdmin)
 
 

@@ -23,6 +23,10 @@
         <li><a href="stories">Stories</a></li>
         <li><a href="aboutus">Who we Are</a></li>
     </ul>
+    {% for places in places %}
+    <p>{{places.name}}</p>
+    {%endfor%}
+
     <p id="text">We are a website in development who wants to give the people
        a chance to share your traveling stories with the world.
        The is a DEMO WebSite, make sure to follow us on socials media ti any news about us.

@@ -1,9 +1,14 @@
 from django.shortcuts import render
+from wheret.models import Places, User, Stories
 
 # Create your views here.
 
 def index(request):
-    return render(request, 'index.html')
+    placeList = Places.objects.all()
+    context = {
+        'places': placeList
+    }
+    return render(request, 'index.html', context)
 
 def contact(request):
     return render(request, 'contact.html')
