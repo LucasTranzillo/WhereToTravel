@@ -15,3 +15,5 @@ class Stories(models.Model):
     title = models.CharField('title', max_length=60)
     type = models.CharField('type', max_length=50)
 
+
+
