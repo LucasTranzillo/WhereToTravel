@@ -1,10 +1,13 @@
+{%load bootstrap4%}
 {%load static%}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="{% static 'css/style.css'%}"></link>
     <title>Contact</title>
+    {%bootstrap_css%}
 </head>
 <body>
 <div class="container">
@@ -25,30 +28,18 @@
 </ul>
 </div>
 
-
-<form name="my_form" method="post">
- <h1>Contact</h1>
-
-        <p class="name">
-            <input type="text" id="nameid" placeholder="YOUR NAME" required="required" name="Name" />
-            <label for="nameid">Name</label>
-        </p>
-        <p class="phone">
-            <input type="text" id="phoneid" placeholder="(xx)xxxxx-xxxx" name="phone" />
-            <label for="phoneid">Phone</label>
-
-        </p>
-        <p>
-            <input type="email" id="emailid" placeholder="email@mail.com" name="email" />
-            <label for="emailid">Email</label>
-        </p>
-        <p>
-            <textarea placeholder="Your message"></textarea>
-        </p>
-        <p class="submit">
-            <input type="submit" onclick="Send();" value="Send" />
-        </p>
-
+<div class="container">
+    <H1>Contact</H1>
+    {%bootstrap_messages%}
+    <form action="'{% url 'contact' %}" autocomplete="off" class="form" method="post">
+        {% csrf_token %}
+        {% bootstrap_form form %}
+        {% buttons%}
+        <button type="submit" class="btn btn-primary">Send Message</button>
+        {%endbuttons%}
     </form>
+</div>
+
+{% bootstrap_javascript jquery='full'%}
 </body>
 </html>
